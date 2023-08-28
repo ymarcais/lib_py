@@ -8,3 +8,4 @@ My Python Libreary
   - def del_NaN_row(self, dataset): // delete NaN: drop lines if NaN
   - def del_NaN_column(self, dataset):  //  delete NaN: drop columns > 50% of NaN
   - def check_digits(self, cleaned_dataset): // select columns filled with digits
+  - def replace_nan_to_median(self, dataset): // replace NaN by median value
