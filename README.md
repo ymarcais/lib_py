@@ -2,9 +2,9 @@
 My Python Libreary
 
 - To import lib_py modules:
-    import sys
-    import os
-    lib_py_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'lib_py'))
+    -import sys
+    -import os
+    -lib_py_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'lib_py'))
     sys.path.append(lib_py_path)
 
 #Data_processing
