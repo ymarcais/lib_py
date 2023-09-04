@@ -1,3 +1,5 @@
+import numpy as np
+
 @dataclass
 class GradientDescent:
 	thetas: np.ndarray
@@ -56,3 +58,15 @@ class GradientDescent:
 			alpha *= 0.99999
 			prev_cost = current_cost
 		return thetas
+	
+	#Calculate the accuracy of the models
+	def my_accuracy(self, X, Y, W, B):
+		Z = np.dot(W.T, X) + B
+		A = self.sigmoid(Z)
+		A = A > 0.5
+
+		A = np.array(A, dtype= 'int64')
+		Y = Y.T
+		acc = (1 -np.sum(np.absolute(A - Y))/ Y.shape[1])*100
+		acc = f"{acc:.2f}"
+		print("Accuracy : ", acc, "%")
