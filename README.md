@@ -17,4 +17,4 @@ My Python Libreary
   - def replace_nan_to_median(self, dataset): // replace NaN by median value
 
 #Bar_processing
-  - as decorator to follow processing
+  - def bar_processing(func): // as decorator to follow processing
